@@ -1,33 +1,38 @@
 import React from "react";
 import Tabs, { TabPane } from "rc-tabs";
-import { MdSecurity } from "react-icons/md";
-import { BsFilePost } from "react-icons/bs";
+import {
+  MdVerifiedUser,
+  MdPerson,
+  MdImage,
+  MdFeaturedVideo,
+  MdImageAspectRatio,
+} from "react-icons/md";
 
 const Main = () => {
   const tbs = [
     {
       name: "Auth",
-      icon: <MdSecurity size={27} className="mr-2" />,
+      icon: <MdVerifiedUser size={27} className="mr-2" />,
       component: <div>hello</div>,
     },
     {
       name: "Users",
-      icon: <BsFilePost size={27} className="mr-2" />,
+      icon: <MdPerson size={27} className="mr-2" />,
       component: <div>User</div>,
     },
     {
       name: "Profile",
-      icon: <MdSecurity size={27} className="mr-2" />,
+      icon: <MdImage size={27} className="mr-2" />,
       component: <div>Profile</div>,
     },
     {
       name: "Images",
-      icon: <MdSecurity size={27} className="mr-2" />,
+      icon: <MdImageAspectRatio size={27} className="mr-2" />,
       component: <div>Images</div>,
     },
     {
       name: "Videos",
-      icon: <MdSecurity size={27} className="mr-2" />,
+      icon: <MdFeaturedVideo size={27} className="mr-2" />,
       component: <div>Videos</div>,
     },
   ];
