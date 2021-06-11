@@ -6,10 +6,10 @@ import { BsFilePost } from "react-icons/bs";
 const Main = () => {
   return (
     <div className="bg-black text-gray-200 border-2 shadow-lg rounded-xl w-80 sm:w-3/5 h-96 absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-      <Tabs className="option-modal-tabs" tabPosition="left" tabBarGutter={16}>
+      <Tabs className="p-4" tabPosition="left" tabBarGutter={16}>
         <TabPane
           tab={
-            <div className="flex border">
+            <div className="flex border cursor-pointer">
               <MdSecurity size={27} className="mr-2" />
               Authentication
             </div>
@@ -20,7 +20,7 @@ const Main = () => {
         </TabPane>
         <TabPane
           tab={
-            <div className="flex border">
+            <div className="flex border cursor-pointer">
               <BsFilePost size={27} className="mr-2" /> Post
             </div>
           }
