@@ -11,8 +11,8 @@ export default function Home() {
       </Head>
 
       <div className="h-screen flex flex-col w-full">
-        <div className="border-2 h-2/6 w-full">head</div>
-        <div className="border-2 h-4/6 w-full">foot</div>
+        <div className="h-2/6 w-full">head</div>
+        <div className="h-4/6 w-full bg-black">foot</div>
       </div>
     </div>
   );
