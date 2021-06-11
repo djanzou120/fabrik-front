@@ -18,3 +18,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.rc-tabs-content-holder{
+  @apply w-full pl-8 pr-2
+}
+
+.rc-tabs-tab{
+  padding: 0 !important;
+  margin: 0 0 1rem 0 !important;
+}
