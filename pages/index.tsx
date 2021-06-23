@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="border">
+      <header className="border flex justify-between items-center">
         <h1 className="text-6xl">Fabrik</h1>
         <div>
           The current theme is: {theme}

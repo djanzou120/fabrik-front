@@ -15,7 +15,8 @@ const Tabulations = () => {
   return (
     <Tabs forceRenderTabPanel defaultIndex={1}>
       <TabList className="md:flex items-center justify-between mb-5 py-3">
-        <div className="text-5xl">Fabrik</div> {primaryTabList}
+        <div className="text-5xl">Fabrik</div>
+        <div>{primaryTabList}</div>
       </TabList>
       {Auth}
       {Users}
