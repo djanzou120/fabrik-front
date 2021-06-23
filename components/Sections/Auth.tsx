@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { tbsB } from "../TabLists";
-const authList = tbsB.map(({ name }) => <Tab key={name}>{name}</Tab>);
+import { authTabs } from "../TabLists";
+const authList = authTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 
 export const Auth = (
   <TabPanel>

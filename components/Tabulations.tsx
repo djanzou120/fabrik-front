@@ -1,10 +1,11 @@
 import React from "react";
 import { Tab, Tabs, TabList } from "react-tabs";
-import { tbsA } from "./TabLists";
-import { Auth } from "./Sections";
-import { Users } from "./Sections/Users";
+import { primaryTabs } from "./TabLists";
+import { Auth, Users } from "./Sections";
 
-const primaryTabList = tbsA.map(({ name }) => <Tab key={name}>{name}</Tab>);
+const primaryTabList = primaryTabs.map(({ name }) => (
+  <Tab key={name}>{name}</Tab>
+));
 
 const Tabulations = () => {
   return (

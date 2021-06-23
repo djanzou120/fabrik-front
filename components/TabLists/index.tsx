@@ -7,7 +7,7 @@ import {
 } from "react-icons/md";
 import React from "react";
 
-export const tbsA = [
+export const primaryTabs = [
   {
     name: "Auth",
     icon: <MdVerifiedUser size={27} className="mr-2" />,
@@ -35,7 +35,7 @@ export const tbsA = [
   },
 ];
 
-export const tbsB = [
+export const authTabs = [
   {
     name: "Register",
     component: <div>Register</div>,
@@ -58,7 +58,7 @@ export const tbsB = [
   },
 ];
 
-export const tbsC = [
+export const usersTabs = [
   {
     name: "All users",
     component: <div>Register</div>,

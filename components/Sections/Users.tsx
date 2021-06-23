@@ -1,8 +1,8 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { tbsC } from "../TabLists";
+import { usersTabs } from "../TabLists";
 
-const userList = tbsC.map(({ name }) => <Tab key={name}>{name}</Tab>);
+const userList = usersTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 
 export const Users = (
   <TabPanel>
