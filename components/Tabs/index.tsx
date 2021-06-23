@@ -60,23 +60,23 @@ export const tbsB = [
 
 export const tbsC = [
   {
-    name: "Register",
+    name: "All users",
     component: <div>Register</div>,
   },
   {
-    name: "Login",
-    component: <div>Login</div>,
+    name: "User by Id",
+    component: <div>Register</div>,
   },
   {
-    name: "Forgot",
-    component: <div>Forgot</div>,
+    name: "Create",
+    component: <div>Create</div>,
   },
   {
-    name: "Reset",
-    component: <div>Reset</div>,
+    name: "Update",
+    component: <div>Update</div>,
   },
   {
-    name: "Logout",
-    component: <div>Logout</div>,
+    name: "Delete",
+    component: <div>Delete</div>,
   },
 ];

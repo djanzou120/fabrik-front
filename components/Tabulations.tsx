@@ -1,9 +1,10 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { tbsA, tbsB } from "./Tabs";
+import { tbsA, tbsB, tbsC } from "./Tabs";
 
 const primaryTabList = tbsA.map(({ name }) => <Tab key={name}>{name}</Tab>);
 const secondaryList1 = tbsB.map(({ name }) => <Tab key={name}>{name}</Tab>);
+const secondaryList2 = tbsC.map(({ name }) => <Tab key={name}>{name}</Tab>);
 
 const Tabulations = () => {
   return (
@@ -62,12 +63,7 @@ const Tabulations = () => {
       <TabPanel>
         <Tabs forceRenderTabPanel>
           {/* Sub List B */}
-          <TabList>
-            <Tab>Philip J. Fry</Tab>
-            <Tab>Turanga Leela</Tab>
-            <Tab>Bender Bending Rodriguez</Tab>
-            <Tab>Amy Wong</Tab>
-          </TabList>
+          <TabList>{secondaryList2}</TabList>
           <TabPanel>
             <p>
               Protagonist, from the 20th Century. Delivery boy. Many times
