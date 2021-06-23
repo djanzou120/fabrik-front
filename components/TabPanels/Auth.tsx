@@ -5,22 +5,22 @@ const authList = authTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 
 export const Auth = (
   <TabPanel>
-    <Tabs forceRenderTabPanel>
-      <TabList>{authList}</TabList>
+    <Tabs className="flex" forceRenderTabPanel>
+      <TabList className="flex flex-col">{authList}</TabList>
       <TabPanel>
-        <p>lorem</p>
+        <p>a</p>
       </TabPanel>
       <TabPanel>
-        <p>lorem</p>
+        <p>b</p>
       </TabPanel>
       <TabPanel>
-        <p>lorem</p>
+        <p>c</p>
       </TabPanel>
       <TabPanel>
-        <p>lorem</p>
+        <p>d</p>
       </TabPanel>
       <TabPanel>
-        <p>lorem</p>
+        <p>e</p>
       </TabPanel>
     </Tabs>
   </TabPanel>

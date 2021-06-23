@@ -6,8 +6,8 @@ const imageList = imageTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 
 export const Image = (
   <TabPanel>
-    <Tabs forceRenderTabPanel>
-      <TabList>{imageList}</TabList>
+    <Tabs className="flex" forceRenderTabPanel>
+      <TabList className="flex flex-col">{imageList}</TabList>
       <TabPanel>
         <p>content</p>
       </TabPanel>
