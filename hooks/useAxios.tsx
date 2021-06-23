@@ -34,8 +34,8 @@ export const useAxios = ({
         setIsLoading(false);
         setData(response);
       })
-      .then((error) => {
-        console.log(error);
+      .then((error: any) => {
+        setError(error.message);
       });
   };
 
