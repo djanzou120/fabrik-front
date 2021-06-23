@@ -1,14 +1,19 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { authTabs } from "../TabLists";
-const authList = authTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
+const authList = authTabs.map(({ name, icon }) => (
+  <Tab key={name}>
+    <div className="custom_tab">
+      <div className="md:mr-20">{name}</div>
+      <div>{icon}</div>
+    </div>
+  </Tab>
+));
 
 export const Auth = (
   <TabPanel>
     <Tabs className="flex" forceRenderTabPanel>
-      <TabList className="flex flex-col text-gray-500 border-r border-dashed border-gray-500 pr-20 mr-20 h-full">
-        {authList}
-      </TabList>
+      <TabList className="custom_tabList">{authList}</TabList>
       <TabPanel>
         <p>a</p>
       </TabPanel>

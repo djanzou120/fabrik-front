@@ -2,12 +2,19 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { usersTabs } from "../TabLists";
 
-const userList = usersTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
+const userList = usersTabs.map(({ name, icon }) => (
+  <Tab key={name}>
+    <div className="custom_tab">
+      <div className="md:mr-20">{name}</div>
+      <div>{icon}</div>
+    </div>
+  </Tab>
+));
 
 export const Users = (
   <TabPanel>
     <Tabs className="flex" forceRenderTabPanel>
-      <TabList className="flex flex-col text-gray-500">{userList}</TabList>
+      <TabList className="custom_tabList">{userList}</TabList>
       <TabPanel>
         <p>lorem</p>
       </TabPanel>

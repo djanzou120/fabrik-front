@@ -5,6 +5,7 @@ import {
   IdentificationIcon,
   PhotographIcon,
   VideoCameraIcon,
+  ChevronRightIcon,
 } from "@heroicons/react/outline";
 
 export const primaryTabs = [
@@ -38,22 +39,27 @@ export const primaryTabs = [
 export const authTabs = [
   {
     name: "Register",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Register</div>,
   },
   {
     name: "Login",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Login</div>,
   },
   {
     name: "Forgot",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Forgot</div>,
   },
   {
     name: "Reset",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Reset</div>,
   },
   {
     name: "Logout",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Logout</div>,
   },
 ];
@@ -61,22 +67,27 @@ export const authTabs = [
 export const usersTabs = [
   {
     name: "Get all",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Register</div>,
   },
   {
     name: "Get by Id",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Register</div>,
   },
   {
     name: "Create",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Create</div>,
   },
   {
     name: "Update",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Update</div>,
   },
   {
     name: "Delete",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Delete</div>,
   },
 ];
@@ -84,6 +95,7 @@ export const usersTabs = [
 export const profileTabs = [
   {
     name: "Get my info",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>Get my info</div>,
   },
 ];
@@ -91,6 +103,7 @@ export const profileTabs = [
 export const imageTabs = [
   {
     name: "All images",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>content</div>,
   },
 ];
@@ -98,6 +111,7 @@ export const imageTabs = [
 export const videoTabs = [
   {
     name: "All videos",
+    icon: <ChevronRightIcon width={20} />,
     component: <div>content</div>,
   },
 ];
