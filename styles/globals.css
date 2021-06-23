@@ -23,4 +23,5 @@ a {
 .react-tabs__tab.react-tabs__tab--selected {
   background: transparent;
   border: none;
+  color: white;
 }
