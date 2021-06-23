@@ -19,11 +19,19 @@ a {
   box-sizing: border-box;
 }
 
-.rc-tabs-content-holder{
-  @apply w-full pl-8 pr-2
+.rc-tabs-nav-list{
+  @apply flex text-gray-500 justify-end py-3
 }
 
-.rc-tabs-tab{
-  padding: 0 !important;
-  margin: 0 0 2rem 0 !important;
-}
+/*.rc-tabs-content-holder{*/
+/*  @apply w-full flex;*/
+/*}*/
+
+/*.rc-tabs-content-top{*/
+/*  @apply w-full flex;*/
+/*}*/
+
+/*.rc-tabs-tab{*/
+/*  padding: 0 !important;*/
+/*  margin: 0 0 2rem 0 !important;*/
+/*}*/
