@@ -1,36 +1,36 @@
-import {
-  MdFeaturedVideo,
-  MdImage,
-  MdImageAspectRatio,
-  MdPerson,
-  MdVerifiedUser,
-} from "react-icons/md";
 import React from "react";
+import {
+  ShieldCheckIcon,
+  UserGroupIcon,
+  IdentificationIcon,
+  PhotographIcon,
+  VideoCameraIcon,
+} from "@heroicons/react/outline";
 
 export const primaryTabs = [
   {
     name: "Auth",
-    icon: <MdVerifiedUser size={27} className="mr-2" />,
+    icon: <ShieldCheckIcon width={20} className="mr-2" />,
     component: <div>hello</div>,
   },
   {
     name: "Users",
-    icon: <MdPerson size={27} className="mr-2" />,
+    icon: <UserGroupIcon width={20} className="mr-2" />,
     component: <div>User</div>,
   },
   {
     name: "Profile",
-    icon: <MdImage size={27} className="mr-2" />,
+    icon: <IdentificationIcon width={20} className="mr-2" />,
     component: <div>Profile</div>,
   },
   {
     name: "Images",
-    icon: <MdImageAspectRatio size={27} className="mr-2" />,
+    icon: <PhotographIcon width={20} className="mr-2" />,
     component: <div>Images</div>,
   },
   {
     name: "Videos",
-    icon: <MdFeaturedVideo size={27} className="mr-2" />,
+    icon: <VideoCameraIcon width={20} className="mr-2" />,
     component: <div>Videos</div>,
   },
 ];
