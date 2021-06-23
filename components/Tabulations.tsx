@@ -1,57 +1,18 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import {
-  MdFeaturedVideo,
-  MdImage,
-  MdImageAspectRatio,
-  MdPerson,
-  MdVerifiedUser,
-} from "react-icons/md";
+import { tbsA, tbsB } from "./Tabs";
 
-const tbs = [
-  {
-    name: "Auth",
-    icon: <MdVerifiedUser size={27} className="mr-2" />,
-    component: <div>hello</div>,
-  },
-  {
-    name: "Users",
-    icon: <MdPerson size={27} className="mr-2" />,
-    component: <div>User</div>,
-  },
-  {
-    name: "Profile",
-    icon: <MdImage size={27} className="mr-2" />,
-    component: <div>Profile</div>,
-  },
-  {
-    name: "Images",
-    icon: <MdImageAspectRatio size={27} className="mr-2" />,
-    component: <div>Images</div>,
-  },
-  {
-    name: "Videos",
-    icon: <MdFeaturedVideo size={27} className="mr-2" />,
-    component: <div>Videos</div>,
-  },
-];
+const primaryTabList = tbsA.map(({ name }) => <Tab key={name}>{name}</Tab>);
+const secondaryList1 = tbsB.map(({ name }) => <Tab key={name}>{name}</Tab>);
 
 const Tabulations = () => {
   return (
     <Tabs forceRenderTabPanel defaultIndex={1}>
-      <TabList>
-        <Tab>The Simpsons</Tab>
-        <Tab>Futurama</Tab>
-      </TabList>
+      <TabList>{primaryTabList}</TabList>
       <TabPanel>
         <Tabs forceRenderTabPanel>
-          <TabList>
-            <Tab>Homer Simpson</Tab>
-            <Tab>Marge Simpson</Tab>
-            <Tab>Bart Simpson</Tab>
-            <Tab>Lisa Simpson</Tab>
-            <Tab>Maggie Simpson</Tab>
-          </TabList>
+          {/* Sub List A */}
+          <TabList>{secondaryList1}</TabList>
           <TabPanel>
             <p>Husband of Marge; father of Bart, Lisa, and Maggie.</p>
             <img
@@ -100,13 +61,12 @@ const Tabulations = () => {
       </TabPanel>
       <TabPanel>
         <Tabs forceRenderTabPanel>
+          {/* Sub List B */}
           <TabList>
             <Tab>Philip J. Fry</Tab>
             <Tab>Turanga Leela</Tab>
             <Tab>Bender Bending Rodriguez</Tab>
             <Tab>Amy Wong</Tab>
-            <Tab>Professor Hubert J. Farnsworth</Tab>
-            <Tab>Doctor John Zoidberg</Tab>
           </TabList>
           <TabPanel>
             <p>
@@ -143,26 +103,6 @@ const Tabulations = () => {
             <p>
               Chinese-Martian intern at Planet Express. Fonfon Ru of Kif Kroker.
             </p>
-          </TabPanel>
-          <TabPanel>
-            <p>
-              Many times great-nephew of Fry. CEO and owner of Planet Express
-              delivery company. Tenured professor of Mars University.
-            </p>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/FuturamaProfessorFarnsworth.png/175px-FuturamaProfessorFarnsworth.png"
-              alt="Professor Hubert J. Farnsworth"
-            />
-          </TabPanel>
-          <TabPanel>
-            <p>
-              Alien from Decapod 10. Planet Express' staff doctor and steward.
-              Has a medical degree and Ph.D in art history.
-            </p>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Dr_John_Zoidberg.png/200px-Dr_John_Zoidberg.png"
-              alt="Doctor John Zoidberg"
-            />
           </TabPanel>
         </Tabs>
       </TabPanel>
