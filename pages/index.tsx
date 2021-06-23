@@ -1,11 +1,9 @@
 import Head from "next/head";
 import React from "react";
-import { useTheme } from "next-themes";
 import Tabulations from "../components/Tabulations";
+import ThemeSwitch from "../components/Others/ThemeSwitch";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
-
   return (
     <div>
       <Head>
@@ -14,13 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="border flex justify-between items-center">
+      <header className="border flex justify-between items-center px-10">
         <h1 className="text-6xl">Fabrik</h1>
-        <div>
-          The current theme is: {theme}
-          <button onClick={() => setTheme("light")}>Light Mode</button>
-          <button onClick={() => setTheme("dark")}>Dark Mode</button>
-        </div>
+        <ThemeSwitch />
       </header>
 
       <main className="flex justify-center">
