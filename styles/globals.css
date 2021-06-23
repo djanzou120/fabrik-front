@@ -8,7 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  @apply bg-black text-white
+  @apply bg-black text-white;
 }
 
 a {
@@ -20,7 +20,7 @@ a {
   box-sizing: border-box;
 }
 
-
-.react-tabs__tab--selected{
-  @apply bg-transparent border-none text-white
+.react-tabs__tab.react-tabs__tab--selected {
+  background: transparent;
+  border: none;
 }
