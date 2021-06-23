@@ -1,7 +1,6 @@
 import Head from "next/head";
 import React from "react";
 import Tabulations from "../components/Tabulations";
-import ThemeSwitch from "../components/Others/ThemeSwitch";
 
 export default function Home() {
   return (
@@ -14,7 +13,9 @@ export default function Home() {
 
       <header className="flex justify-between items-center px-10 py-4">
         <h1 className="text-6xl">Fabrik</h1>
-        <ThemeSwitch />
+        <ul>
+          <li>lorem</li>
+        </ul>
       </header>
 
       <main className="flex justify-center">
