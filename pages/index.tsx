@@ -1,8 +1,11 @@
 import Head from "next/head";
 import React from "react";
+import { useTheme } from "next-themes";
 import Tabulations from "../components/Tabulations";
 
 export default function Home() {
+  const { theme, setTheme } = useTheme();
+
   return (
     <div>
       <Head>
@@ -10,11 +13,21 @@ export default function Home() {
         <meta name="description" content="Your universal fake api" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col">
-        <main className="md:px-5 px-3 border-4 shadow-lg rounded-2xl w-11/12 h-96 absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+
+      <header className="border">
+        <h1 className="text-6xl">Fabrik</h1>
+        <div>
+          The current theme is: {theme}
+          <button onClick={() => setTheme("light")}>Light Mode</button>
+          <button onClick={() => setTheme("dark")}>Dark Mode</button>
+        </div>
+      </header>
+
+      <main className="flex justify-center">
+        <div className="md:px-5 px-3 mt-20 border-2 shadow-lg rounded-2xl w-11/12 h-96 ">
           <Tabulations />
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
   );
 }
