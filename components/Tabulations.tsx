@@ -14,7 +14,9 @@ const primaryTabList = primaryTabs.map(({ name, icon }) => (
 const Tabulations = () => {
   return (
     <Tabs forceRenderTabPanel defaultIndex={1}>
-      <TabList>{primaryTabList}</TabList>
+      <TabList className="flex items-center justify-between">
+        <div className="text-5xl">Fabrik</div> {primaryTabList}
+      </TabList>
       {Auth}
       {Users}
       {Profile}
