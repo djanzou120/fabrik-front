@@ -7,7 +7,7 @@ const userList = usersTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 export const Users = (
   <TabPanel>
     <Tabs className="flex" forceRenderTabPanel>
-      <TabList className="flex flex-col">{userList}</TabList>
+      <TabList className="flex flex-col text-gray-500">{userList}</TabList>
       <TabPanel>
         <p>lorem</p>
       </TabPanel>

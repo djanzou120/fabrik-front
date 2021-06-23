@@ -6,7 +6,9 @@ const authList = authTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 export const Auth = (
   <TabPanel>
     <Tabs className="flex" forceRenderTabPanel>
-      <TabList className="flex flex-col">{authList}</TabList>
+      <TabList className="flex flex-col text-gray-500 border h-full">
+        {authList}
+      </TabList>
       <TabPanel>
         <p>a</p>
       </TabPanel>

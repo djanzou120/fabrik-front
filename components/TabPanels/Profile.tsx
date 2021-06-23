@@ -7,7 +7,7 @@ const profileList = profileTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 export const Profile = (
   <TabPanel>
     <Tabs className="flex" forceRenderTabPanel>
-      <TabList className="flex flex-col">{profileList}</TabList>
+      <TabList className="flex flex-col text-gray-500">{profileList}</TabList>
       <TabPanel>
         <p>content</p>
       </TabPanel>

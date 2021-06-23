@@ -19,7 +19,7 @@ export default function Home() {
       </header>
 
       <main className="flex justify-center">
-        <div className="md:px-5 px-3 mt-20 border-2 shadow-lg rounded-2xl w-11/12 h-96 ">
+        <div className="md:px-5 px-3 mt-20 border-2 border-gray-700 shadow-lg rounded-2xl w-11/12 transition transition-all duration-200">
           <Tabulations />
         </div>
       </main>

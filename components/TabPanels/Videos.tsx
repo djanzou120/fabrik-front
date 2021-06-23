@@ -7,7 +7,7 @@ const videoList = videoTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 export const Video = (
   <TabPanel>
     <Tabs className="flex" forceRenderTabPanel>
-      <TabList className="flex flex-col">{videoList}</TabList>
+      <TabList className="flex flex-col text-gray-500">{videoList}</TabList>
       <TabPanel>
         <p>content</p>
       </TabPanel>

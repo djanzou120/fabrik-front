@@ -10,27 +10,27 @@ import {
 export const primaryTabs = [
   {
     name: "Auth",
-    icon: <ShieldCheckIcon width={20} className="md:mr-2" />,
+    icon: <ShieldCheckIcon width={25} className="md:mr-2" />,
     component: <div>hello</div>,
   },
   {
     name: "Users",
-    icon: <UserGroupIcon width={20} className="mr-2" />,
+    icon: <UserGroupIcon width={25} className="mr-2" />,
     component: <div>User</div>,
   },
   {
     name: "Profile",
-    icon: <IdentificationIcon width={20} className="mr-2" />,
+    icon: <IdentificationIcon width={25} className="mr-2" />,
     component: <div>Profile</div>,
   },
   {
     name: "Images",
-    icon: <PhotographIcon width={20} className="mr-2" />,
+    icon: <PhotographIcon width={25} className="mr-2" />,
     component: <div>Images</div>,
   },
   {
     name: "Videos",
-    icon: <VideoCameraIcon width={20} className="mr-2" />,
+    icon: <VideoCameraIcon width={25} className="mr-2" />,
     component: <div>Videos</div>,
   },
 ];
