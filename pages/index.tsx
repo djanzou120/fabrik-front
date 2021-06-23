@@ -6,9 +6,16 @@ import { useAxios } from "../hooks";
 export default function Home() {
   const { getData, isLoading, data, error } = useAxios({
     url: "https://fabrik-api.herokuapp.com/api/v1/fake/auth/login",
+    method: "POST",
+    input: {
+      email: "philippe.tedajo@gmail.com",
+      password: "12345",
+    },
+    token:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MjhtNHUxRkoiLCJpYXQiOjE2MjQ0NzIyMDAsImV4cCI6MTYyNDU1ODYwMH0.tVJ7IcF6u4Rp3LynGRk6cZF2WV-607VM3wnPayy6nfk",
   });
 
-  console.log(isLoading, data);
+  console.log(isLoading, data, error);
 
   return (
     <div>
