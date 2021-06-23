@@ -4,41 +4,40 @@ import axios from "axios";
 
 interface UseAxiosProps {
   url: string;
-  method: Method;
-  result: object;
+  method?: Method;
+  input?: object;
   token?: string;
 }
 
-export const UseAxios = async ({
+export const useAxios = ({
   url,
-  method,
-  result,
+  method = "GET",
+  input,
   token,
 }: UseAxiosProps) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [data, setData] = useState({});
   const [error, setError] = useState({});
 
-  const getData = async () => {};
+  let header = { "Content-Type": "application/json" };
+  if (token) header["Authorization"] = token;
 
-  try {
+  const getData = () => {
     setIsLoading(true);
-    let header = { "Content-Type": "application/json" };
-    if (token) header["Authorization"] = token;
-
-    let response = await axios({
+    axios({
       url: url,
       method: method,
-      data: data,
+      data: input,
       headers: header,
-    });
-
-    setIsLoading(false);
-
-    console.log(response);
-  } catch (err) {
-    throw new Error(err);
-  }
+    })
+      .then((response) => {
+        setIsLoading(false);
+        setData(response);
+      })
+      .then((error) => {
+        console.log(error);
+      });
+  };
 
   return { getData, data, isLoading, error };
 };
