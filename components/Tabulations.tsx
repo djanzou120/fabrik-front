@@ -1,6 +1,6 @@
 import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { tbsA, tbsB, tbsC } from "./TabLists";
+import { Tab, Tabs, TabList } from "react-tabs";
+import { tbsA } from "./TabLists";
 import { Auth } from "./Sections";
 import { Users } from "./Sections/Users";
 
