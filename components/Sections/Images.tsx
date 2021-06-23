@@ -1,13 +1,13 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { profileTabs } from "../TabLists";
+import { imageTabs } from "../TabLists";
 
-const profileList = profileTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
+const imageList = imageTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 
-export const Profile = (
+export const Image = (
   <TabPanel>
     <Tabs forceRenderTabPanel>
-      <TabList>{profileList}</TabList>
+      <TabList>{imageList}</TabList>
       <TabPanel>
         <p>content</p>
       </TabPanel>

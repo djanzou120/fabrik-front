@@ -60,11 +60,11 @@ export const authTabs = [
 
 export const usersTabs = [
   {
-    name: "All users",
+    name: "Get all",
     component: <div>Register</div>,
   },
   {
-    name: "User by Id",
+    name: "Get by Id",
     component: <div>Register</div>,
   },
   {
@@ -78,5 +78,26 @@ export const usersTabs = [
   {
     name: "Delete",
     component: <div>Delete</div>,
+  },
+];
+
+export const profileTabs = [
+  {
+    name: "Get my info",
+    component: <div>Get my info</div>,
+  },
+];
+
+export const imageTabs = [
+  {
+    name: "All images",
+    component: <div>content</div>,
+  },
+];
+
+export const videoTabs = [
+  {
+    name: "All videos",
+    component: <div>content</div>,
   },
 ];

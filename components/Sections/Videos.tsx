@@ -1,13 +1,13 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { profileTabs } from "../TabLists";
+import { videoTabs } from "../TabLists";
 
-const profileList = profileTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
+const videoList = videoTabs.map(({ name }) => <Tab key={name}>{name}</Tab>);
 
-export const Profile = (
+export const Video = (
   <TabPanel>
     <Tabs forceRenderTabPanel>
-      <TabList>{profileList}</TabList>
+      <TabList>{videoList}</TabList>
       <TabPanel>
         <p>content</p>
       </TabPanel>
