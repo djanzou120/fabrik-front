@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col">
-        <main className="px-3 border-4 border shadow-lg rounded-2xl w-11/12 h-96 absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <main className="md:px-5 px-3 border-4 shadow-lg rounded-2xl w-11/12 h-96 absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <Tabulations />
         </main>
       </div>
