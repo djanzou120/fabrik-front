@@ -10,7 +10,7 @@ import {
 export const primaryTabs = [
   {
     name: "Auth",
-    icon: <ShieldCheckIcon width={20} className="mr-2" />,
+    icon: <ShieldCheckIcon width={20} className="md:mr-2" />,
     component: <div>hello</div>,
   },
   {
