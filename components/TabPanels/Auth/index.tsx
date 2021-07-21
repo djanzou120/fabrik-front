@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { authTabs } from "../TabLists";
-import { TabContents } from "../TabContents";
+import { authTabs } from "../../TabLists";
+import { TabContents } from "../../TabContents";
 
 const authList = authTabs.map(({ name, icon }) => (
   <Tab key={name}>

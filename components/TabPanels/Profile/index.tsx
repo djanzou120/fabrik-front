@@ -1,8 +1,8 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { imageTabs } from "../TabLists";
+import { profileTabs } from "../../TabLists";
 
-const imageList = imageTabs.map(({ name, icon }) => (
+const profileList = profileTabs.map(({ name, icon }) => (
   <Tab key={name}>
     <div className="custom_tab">
       <div className="md:mr-20">{name}</div>
@@ -11,10 +11,10 @@ const imageList = imageTabs.map(({ name, icon }) => (
   </Tab>
 ));
 
-export const Image = (
+export const Profile = (
   <TabPanel>
     <Tabs className="flex" forceRenderTabPanel>
-      <TabList className="custom_tabList">{imageList}</TabList>
+      <TabList className="custom_tabList">{profileList}</TabList>
       <TabPanel>
         <p>content</p>
       </TabPanel>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList } from "react-tabs";
 import { primaryTabs } from "./TabLists";
-import { Auth, Users, Profile, Image, Video } from "./TabPanels";
+import { Auth, Users, Profile, Image, Videos } from "./TabPanels";
 
 const primaryTabList = primaryTabs.map(({ name, icon }) => (
   <Tab key={name}>
@@ -22,7 +22,7 @@ const Tabulations = () => {
       {Users}
       {Profile}
       {Image}
-      {Video}
+      {Videos}
     </Tabs>
   );
 };

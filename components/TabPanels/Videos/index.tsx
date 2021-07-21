@@ -1,6 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { videoTabs } from "../TabLists";
+import { videoTabs } from "../../TabLists";
 
 const videoList = videoTabs.map(({ name, icon }) => (
   <Tab key={name}>
@@ -11,7 +11,7 @@ const videoList = videoTabs.map(({ name, icon }) => (
   </Tab>
 ));
 
-export const Video = (
+export const Videos = (
   <TabPanel>
     <Tabs className="flex" forceRenderTabPanel>
       <TabList className="custom_tabList">{videoList}</TabList>
