@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
 
       <header className="flex justify-between items-center px-10 py-4">
-        <h1 className="text-6xl">Fabrik</h1>
+        <h1 className="text-6xl text-white">Fabrik</h1>
         <ul>
           <li onClick={getData}>lorem</li>
         </ul>

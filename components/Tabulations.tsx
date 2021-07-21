@@ -15,7 +15,7 @@ const Tabulations = () => {
   return (
     <Tabs forceRenderTabPanel defaultIndex={1}>
       <TabList className="md:flex items-center justify-between mb-20">
-        <div className="text-5xl pr-20 pb-3 md:pb-0">Fabrik</div>
+        <div className="text-5xl pr-20 pb-3 md:pb-0 text-white">Fabrik</div>
         <div className="text-gray-700">{primaryTabList}</div>
       </TabList>
       {Auth}
