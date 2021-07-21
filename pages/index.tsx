@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import Tabulations from "../components/Tabulations";
+import ConsoleLog from "../components/Console/ConsoleLog";
 import { useAxios } from "../hooks";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
         <h1 className="text-6xl">Fabrik</h1>
         <ul>
           <li onClick={getData}>lorem</li>
+          <ConsoleLog />
         </ul>
       </header>
 
