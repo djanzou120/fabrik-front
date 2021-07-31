@@ -6,26 +6,27 @@ const ConsoleLog = () => {
 
   const [logs, setLogs] = useState([]);
 
-  // run once!
   useEffect(() => {
-    const startConsole = async () => {
-      const Hook = (await import("console-feed")).Hook;
-      const Unhook = (await import("console-feed")).Unhook;
-      Hook(
-        window.console,
-        (log) => setLogs((currLogs) => [...currLogs, log]),
-        false
-      );
-      // @ts-ignore
-      return () => Unhook(window.console);
-    };
-
-    startConsole();
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+      .then((response) => response.json())
+      .then((json) => setLogs(json));
   }, []);
 
   return (
-    <div style={{ backgroundColor: "#242424" }}>
-      <Console logs={logs} variant="dark" />
+    <div
+      className="h-80 overflow-auto rounded-xl"
+      style={{ backgroundColor: "#242424" }}
+    >
+      <Console
+        logs={[
+          {
+            id: "result",
+            method: "log",
+            data: [logs],
+          },
+        ]}
+        variant="dark"
+      />
     </div>
   );
 };

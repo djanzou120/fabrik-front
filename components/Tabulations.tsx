@@ -13,17 +13,19 @@ const primaryTabList = primaryTabs.map(({ name, icon }) => (
 
 const Tabulations = () => {
   return (
-    <Tabs forceRenderTabPanel defaultIndex={1}>
-      <TabList className="md:flex items-center justify-between mb-20">
-        <div className="text-5xl pr-20 pb-3 md:pb-0s">Fabrik</div>
-        <div className="">{primaryTabList}</div>
-      </TabList>
-      {Auth}
-      {Users}
-      {Profile}
-      {Image}
-      {Videos}
-    </Tabs>
+    <div className="border-1 md:px-5 px-3 pt-8 pb-14 mt-20 shadow-lg rounded-xl w-full transition transition-all duration-200">
+      <Tabs forceRenderTabPanel defaultIndex={1}>
+        <TabList className="md:flex items-center justify-between mb-20">
+          <div className="text-5xl pr-20 pb-3 md:pb-0s">Fabrik</div>
+          <div className="">{primaryTabList}</div>
+        </TabList>
+        {Auth}
+        {Users}
+        {Profile}
+        {Image}
+        {Videos}
+      </Tabs>
+    </div>
   );
 };
 

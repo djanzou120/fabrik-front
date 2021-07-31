@@ -1,7 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { usersTabs } from "../../TabLists";
-import ConsoleLog from "../../Console/ConsoleLog";
 
 const userList = usersTabs.map(({ name, icon }) => (
   <Tab key={name}>
@@ -17,9 +16,7 @@ export const Users = (
     <Tabs className="flex" forceRenderTabPanel>
       <TabList className="custom_tabList">{userList}</TabList>
       <TabPanel>
-        <ConsoleLog />
-        <button>Process</button>
-        <ConsoleLog />
+        <p>one</p>
       </TabPanel>
       <TabPanel>
         <p>two</p>

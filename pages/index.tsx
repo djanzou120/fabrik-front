@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Tabulations from "../components/Tabulations";
 import { useAxios } from "../hooks";
+import ConsoleLog from "../components/Console/ConsoleLog";
 
 export default function Home() {
   const { getData, isLoading, data, error } = useAxios({
@@ -32,11 +33,10 @@ export default function Home() {
         </ul>
       </header>
 
-      <main className="flex justify-center items-center flex-col border">
-        <div className="border-2 blurred-box md:px-5 px-3 pt-8 pb-14 mt-20 shadow-lg rounded-2xl w-11/12 transition transition-all duration-200">
-          <Tabulations />
-        </div>
-        <div className="border-2 w-96 h-96">Console</div>
+      <main className="flex md:px-20 flex-col border-2 border-red-600">
+        <Tabulations />
+
+        <ConsoleLog />
       </main>
     </div>
   );
